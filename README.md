@@ -5,7 +5,7 @@
 
 **The complete guide for upgrading your Polymarket trading bot from V1 to V2 (cutover April 28, 2026).**
 
-I migrated [a live-traded crash-recovery bot](https://github.com/LuciferForge/polymarket-crash-bot) (302 closed trades, 79.8% win rate) from V1 to V2 in 4 hours during today's cutover. This repo has the exact code diff, every error I hit, and how I solved each. If you're a developer with a bot that broke this morning — start here.
+I migrated [a live-traded crash-recovery bot](https://github.com/LuciferForge/polymarket-crash-bot) (308 closed trades, 80.2% win rate) from V1 to V2 in 4 hours during today's cutover. This repo has the exact code diff, every error I hit, and how I solved each. If you're a developer with a bot that broke this morning — start here.
 
 ## TL;DR — What changed and what to do
 
@@ -72,7 +72,7 @@ If your bot is still running V1 imports as of April 28, 2026: **it will fail wit
 
 ## About the author
 
-[LuciferForge](https://github.com/LuciferForge) — solo operator running a public-audited Polymarket bot ([302 closed trades, 79.8% WR](https://github.com/LuciferForge/polymarket-crash-bot)). Also runs [protodex.io](https://protodex.io) (5,800+ MCP servers indexed) and the [free Polymarket data API](https://api.protodex.io).
+[LuciferForge](https://github.com/LuciferForge) — solo operator running a public-audited Polymarket bot ([308 closed trades, 80.2% WR](https://github.com/LuciferForge/polymarket-crash-bot)). Also runs [protodex.io](https://protodex.io) (5,800+ MCP servers indexed) and the [free Polymarket data API](https://api.protodex.io).
 
 If this saved you a few hours, star the repo. If you're stuck on something the docs don't cover, open an issue — happy to help.
 
