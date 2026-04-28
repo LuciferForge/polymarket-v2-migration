@@ -1,5 +1,8 @@
 # Polymarket V2 Migration Cookbook
 
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Cutover](https://img.shields.io/badge/cutover-April%2028%2C%202026-orange.svg)](docs/timeline.md)
+
 **The complete guide for upgrading your Polymarket trading bot from V1 to V2 (cutover April 28, 2026).**
 
 I migrated [a live-traded crash-recovery bot](https://github.com/LuciferForge/polymarket-crash-bot) (302 closed trades, 79.8% win rate) from V1 to V2 in 4 hours during today's cutover. This repo has the exact code diff, every error I hit, and how I solved each. If you're a developer with a bot that broke this morning — start here.
