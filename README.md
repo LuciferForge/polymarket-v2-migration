@@ -68,11 +68,11 @@ If your bot is still running V1 imports as of April 28, 2026: **it will fail wit
 
 **Allowances on V2 contracts only appear AFTER you trigger the migration prompt** (i.e., attempt a trade in the Polymarket UI). Just signing into the app does NOT migrate. The `update_balance_allowance()` SDK call also does NOT migrate — it only updates what's already approved. **Manual UI trade is the only way to trigger the wallet signature flow.**
 
-**The slippage problem is unchanged.** V2 fixes nonce-related failed-fill issues but doesn't change order-book depth. If your bot used a price-discount ladder (5%, 15%, 25% off ref price) on TIMEOUT exits, that strategy still walks thin books down. We rewrote ours to be orderbook-aware ([here's how](https://github.com/LuciferForge/polymarket-crash-bot)).
+**The slippage problem is unchanged.** V2 fixes nonce-related failed-fill issues but doesn't change order-book depth. If your bot used a price-discount ladder (5%, 15%, 25% off ref price) on TIMEOUT exits, that strategy still walks thin books down. We rewrote ours to be orderbook-aware ([here's how](https://github.com/LuciferForge/polymarket-crash-bot)). If you want to backtest your own thin-book exit logic before you resume production volume, I published [18.6M Polymarket price snapshots across 22,410 markets](https://github.com/LuciferForge/polymarket-historical-data) (92 days of 15-min history) — real depth to test against, not synthetic.
 
 ## About the author
 
-[LuciferForge](https://github.com/LuciferForge) — solo operator running a public-audited Polymarket bot ([308 closed trades, 80.2% WR](https://github.com/LuciferForge/polymarket-crash-bot)). Also runs [protodex.io](https://protodex.io) (5,800+ MCP servers indexed) and the [free Polymarket data API](https://api.protodex.io).
+[LuciferForge](https://github.com/LuciferForge) — solo operator running a public-audited Polymarket bot ([308 closed trades, 80.2% WR](https://github.com/LuciferForge/polymarket-crash-bot)). Also runs [protodex.io](https://protodex.io) (18,400+ MCP servers indexed), the [free Polymarket data API](https://api.protodex.io), and a [92-day historical Polymarket price dataset](https://github.com/LuciferForge/polymarket-historical-data).
 
 If this saved you a few hours, star the repo. If you're stuck on something the docs don't cover, open an issue — happy to help.
 
